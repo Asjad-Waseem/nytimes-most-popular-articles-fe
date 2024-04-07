@@ -27,6 +27,7 @@ const Dropdown = ({
         {options?.map((option: number, index: number) => (
           <li
             key={index}
+            data-testid={`option-${option}`}
             className={`p-2 text-sm hover:bg-gray-200
             ${option === selectedOption && "bg-sky-600 text-white"}
           `}
