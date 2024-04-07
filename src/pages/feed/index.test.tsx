@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen, act } from "@testing-library/react";
 import Feed from "./index";
 
 jest.mock("@api/services", () => ({
@@ -10,7 +10,9 @@ jest.mock("@api/services", () => ({
 }));
 
 test("renders the Feed component with dropdown and articles", async () => {
-  render(<Feed />);
+  await act(async () => {
+    render(<Feed />);
+  });
 
   // Check title
   expect(

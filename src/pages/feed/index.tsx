@@ -35,17 +35,22 @@ const Feed = (): JSX.Element => {
 
   return (
     <div className="flex flex-col items-center">
-      <h1 className="text-4xl font-bold tracking-tight mb-8">
+      <h1
+        data-testid="feed-title"
+        className="text-4xl font-bold tracking-tight mb-8"
+      >
         NY Times Most Popular Articles 📝
       </h1>
-      <h4>How far back in days do you want to see the articles from?</h4>
+      <h4 data-testid="feed-subtitle">
+        How far back in days do you want to see the articles from?
+      </h4>
       <Dropdown
         options={dayOptions}
         selectedOption={period}
         handleSelectedChange={(val) => setPeriod(val)}
       />
-      <hr className="my-1 w-full" />
-      <div>
+      <hr data-testid="feed-divider" className="my-1 w-full" />
+      <div data-testid="feed-articles-list">
         {mostPopularArticles?.map((item: ArticleProps, index) => (
           <Article
             key={index}

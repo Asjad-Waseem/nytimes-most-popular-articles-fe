@@ -9,7 +9,10 @@ const Dropdown = ({
 }: DropdownProps): JSX.Element => {
   const [open, setOpen] = useState(false);
   return (
-    <div className="font-medium h-40 border-gray-300 rounded">
+    <div
+      data-testid="dropdown-test"
+      className="font-medium h-40 border-gray-300 rounded"
+    >
       <div
         onClick={() => setOpen(!open)}
         className={` bg-white w-full p-2 flex items-center border-b border-gray-500	 justify-between rounded ${
