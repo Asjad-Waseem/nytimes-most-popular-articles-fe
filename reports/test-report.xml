@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+    <file path="C:\Users\hp\Desktop\Docs\All Work Docs\Important Documents\Projects\React Projects\nytimes-most-popular-articles-fe\src\components\content\articleCardContentNested\index.test.tsx">
+        <testCase name="ArticleCardContentNested renders label and options correctly" duration="97"/>
+        <testCase name="ArticleCardContentNested renders label correctly without options" duration="8"/>
+    </file>
+    <file path="C:\Users\hp\Desktop\Docs\All Work Docs\Important Documents\Projects\React Projects\nytimes-most-popular-articles-fe\src\components\buttons\dropdown\index.test.tsx">
+        <testCase name="Dropdown renders correctly" duration="334"/>
+        <testCase name="Dropdown calls handleSelectedChange when option is clicked" duration="58"/>
+        <testCase name="Dropdown does not call handleSelectedChange when selected option is clicked again" duration="118"/>
+    </file>
+    <file path="C:\Users\hp\Desktop\Docs\All Work Docs\Important Documents\Projects\React Projects\nytimes-most-popular-articles-fe\src\components\content\articleCardContentBasic\index.test.tsx">
+        <testCase name="ArticleCardContentBasic renders label and value correctly" duration="22"/>
+    </file>
+    <file path="C:\Users\hp\Desktop\Docs\All Work Docs\Important Documents\Projects\React Projects\nytimes-most-popular-articles-fe\src\sections\article\index.test.tsx">
+        <testCase name="Article component renders article with provided data" duration="113"/>
+    </file>
+    <file path="C:\Users\hp\Desktop\Docs\All Work Docs\Important Documents\Projects\React Projects\nytimes-most-popular-articles-fe\src\pages\feed\index.test.tsx">
+        <testCase name="renders the Feed component with dropdown and articles" duration="284"/>
+    </file>
+</testExecutions>

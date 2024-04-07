@@ -6,15 +6,18 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "test": "jest",
+    "test": "jest --coverage --testResultsProcessor jest-sonar-reporter",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "sonar": "node sonar-project.js"
   },
   "dependencies": {
     "axios": "^1.6.8",
+    "jest-sonar-reporter": "^2.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
+    "sonarqube-scanner": "^3.4.0",
     "vite-tsconfig-paths": "^4.3.2"
   },
   "devDependencies": {
@@ -63,5 +66,10 @@
     "setupFilesAfterEnv": [
       "<rootDir>/setupTests.js"
     ]
+  },
+  "jestSonar": {
+    "reportPath": "reports",
+    "reportFile": "test-report.xml",
+    "indent": 4
   }
 }
