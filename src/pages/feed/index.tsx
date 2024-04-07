@@ -31,6 +31,7 @@ const Feed = (): JSX.Element => {
 
   useEffect(() => {
     getMostPopularArticles();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [period]);
 
   return (
