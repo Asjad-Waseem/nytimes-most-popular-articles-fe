@@ -19,6 +19,8 @@
 
 - For executing the unit tests, use the command "npm test" or "npm run test" to run all the unit tests.
 
+We have also added sonarqube report to illustrate code coverage in our codebase.
+
 # RUNNING THE CYPRESS TESTS
 
 - For executing all the the cypress tests once, use the command "npx cypress run" if you are using npm, "yarn cypress run". If you are using yarn, use "yarn cypress run".
