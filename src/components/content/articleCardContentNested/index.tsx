@@ -1,4 +1,4 @@
-import { ArticleCardContentNestedProps } from "./types.ts";
+import { ArticleCardContentNestedProps } from "./types";
 
 const ArticleCardContentNested = ({
   label,

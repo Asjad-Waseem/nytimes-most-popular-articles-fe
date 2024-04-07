@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { DropdownProps } from "./types";
 import { BiChevronDown } from "react-icons/bi";
+
+import { DropdownProps } from "./types";
 
 const Dropdown = ({
   options,

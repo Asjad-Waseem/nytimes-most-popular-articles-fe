@@ -1,4 +1,4 @@
-import axiosInstance from "../../utils/apiInstance";
+import axiosInstance from "@utils/apiInstance";
 import { API_KEY } from "../../../config-global";
 
 class MostPopularArticlesService {

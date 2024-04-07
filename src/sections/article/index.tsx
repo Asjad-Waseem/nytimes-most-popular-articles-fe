@@ -1,12 +1,10 @@
 import React, { useState } from "react";
-
 import { BiChevronDown } from "react-icons/bi";
 
 import ArticleCardContent from "@components/content/articleCardContentBasic";
-import ArticleCardContentNested from "@components/content/articleCardContentNested";
-
-import { ArticleProps } from "./types";
 import ArticleCardContentBasic from "@components/content/articleCardContentBasic";
+import ArticleCardContentNested from "@components/content/articleCardContentNested";
+import { ArticleProps } from "./types";
 
 const Article = ({
   title,

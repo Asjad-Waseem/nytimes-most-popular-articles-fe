@@ -23,6 +23,8 @@ We have also added sonarqube report to illustrate code coverage in our codebase.
 
 # RUNNING THE CYPRESS TESTS
 
+- For opening up the Cypress GUI, use the command "npx cypress open", or alternatively use "yarn cypress open" if you are using yarn.
+
 - For executing all the the cypress tests once, use the command "npx cypress run" if you are using npm, "yarn cypress run". If you are using yarn, use "yarn cypress run".
 
 - For executing a specific cypress spec file test, use the command "npm run cy:run -- --record --spec "cypress/e2e/my-spec.cy.js" if you are using npm. If you are using yar, use "yarn run cy:run -- --record --spec "cypress/e2e/my-spec.cy.js".

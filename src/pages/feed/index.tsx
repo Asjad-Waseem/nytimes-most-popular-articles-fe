@@ -3,15 +3,13 @@ import { useState, useEffect } from "react";
 import Dropdown from "@components/buttons/dropdown";
 import Article from "@sections/article";
 import { MostPopularArticlesService } from "@api/services";
-
 import { ArticleProps } from "@sections/article/types";
+import { FEED_TITLE, FEED_SUBTITLE, DAY_OPTIONS } from "@constants/index";
 
 const Feed = (): JSX.Element => {
   const { fetchMostPopularArticles } = MostPopularArticlesService;
 
-  const dayOptions: number[] = [1, 7, 30];
-
-  const [period, setPeriod] = useState<number>(dayOptions[0]);
+  const [period, setPeriod] = useState<number>(DAY_OPTIONS[0]);
   const [mostPopularArticles, setMostPopularArticles] = useState([]);
 
   const getMostPopularArticles = async () => {
@@ -40,13 +38,11 @@ const Feed = (): JSX.Element => {
         data-testid="feed-title"
         className="text-4xl font-bold tracking-tight mb-8"
       >
-        NY Times Most Popular Articles 📝
+        {FEED_TITLE}
       </h1>
-      <h4 data-testid="feed-subtitle">
-        How far back in days do you want to see the articles from?
-      </h4>
+      <h4 data-testid="feed-subtitle">{FEED_SUBTITLE}</h4>
       <Dropdown
-        options={dayOptions}
+        options={DAY_OPTIONS}
         selectedOption={period}
         handleSelectedChange={(val) => setPeriod(val)}
       />
